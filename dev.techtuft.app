@@ -1,7 +1,7 @@
 server {
     listen 83;
-    server_name cp.b2cengage.com;
-    root /home/apps/cp;
+    server_name dev.techtuft.com;
+    root /home/apps/techtuft;
 
     index index.html index.htm index.php;
 
@@ -14,8 +14,8 @@ server {
     location = /favicon.ico { access_log off; log_not_found off; }
     location = /robots.txt  { access_log off; log_not_found off; }
 
-    access_log /var/log/nginx/coreengine-acess.log;
-    error_log  /var/log/nginx/coreengine-error.log error;
+    access_log /var/log/nginx/techtuft-access.log;
+    error_log  /var/log/nginx/techtuft-error.log error;
 
     error_page 404 /index.php;
 

@@ -28,7 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx
 RUN rm /etc/nginx/sites-available/default
 
 #copy our application configuration files and create links
-ADD cp.b2cengage.app /etc/nginx/sites-available/
+ADD dev.techtuft.app /etc/nginx/sites-available/
 
 RUN ln -s /etc/nginx/sites-available/* /etc/nginx/sites-enabled
 
